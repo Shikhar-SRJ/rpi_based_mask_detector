@@ -30,7 +30,7 @@ class VideoCamera(object):
 
         # Draw a rectangle around the objects
         for (x, y, w, h) in objects:
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 3)
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 140, 125), 2)
 
         ret, jpeg = cv2.imencode('.jpg', frame)
         return jpeg.tobytes()
